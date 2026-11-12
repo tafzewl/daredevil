@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080709">
+  <meta name="description" content="A fan-made Daredevil archive exploring faith, grief, justice, and Hell's Kitchen.">
+  <title>DAREDEVIL — The Man Without Fear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="monogram" href="#home" title="Back to top / Home" aria-label="Daredevil home">D<span>D</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#comics">Comics</a><a href="#letters">Dear Karen</a><a href="#radar">Radar</a><a href="#timeline">Timeline</a>
+    </nav>
+    <div class="sound-control"><span class="speaker">◖))</span><span>Audio</span><button id="audioToggle" class="switch on" aria-label="Toggle audio feedback" aria-pressed="true"><i></i></button></div>
+    <div class="location">HELL'S KITCHEN <small>40.7636° N&nbsp; 73.9918° W</small></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-art" aria-hidden="true"><div class="city-haze"></div><div class="hero-silhouette"></div><div class="cross"></div></div>
+      <div class="hero-copy">
+        <p class="eyebrow">THE MAN. &nbsp; THE MASK. &nbsp; THE MISSION.</p>
+        <h1>DAREDEVIL</h1>
+        <p class="subline">FAITH <b>/</b> JUSTICE <b>/</b> HELL'S KITCHEN</p>
+        <blockquote>“I'm not a hero.<br>I'm a man who refuses to be a villain.”<cite>— A FAN-MADE HOMAGE</cite></blockquote>
+      </div>
+      <p class="hero-aside">SOME<br>STORIES<br>SHOULDN'T<br>BE HEARD.</p>
+      <div class="hero-bottom"><span>01 / THE DEVIL IN THE DETAILS</span><a href="#comics">DESCEND INTO THE ARCHIVE <span>↓</span></a></div>
+    </section>
+
+    <section class="section comics-section" id="comics">
+      <div class="section-heading">
+        <div><p class="eyebrow">MASTERWORKS</p><h2>ICONIC COMIC ISSUES</h2></div>
+        <p class="heading-note">Four stories. One man.<br>A thousand reasons to keep fighting.</p>
+      </div>
+      <div class="comic-grid">
+        <article class="comic-card" data-comic="born">
+          <div class="comic-meta"><h3>BORN AGAIN</h3><span>(1986)</span><em>Frank Miller &amp; David Mazzucchelli</em></div>
+          <div class="comic-art art-born" role="img" aria-label="Original abstract red-and-black illustration of a lone figure in a rain-soaked city"><span class="art-cross"></span><span class="art-figure"></span><span class="art-label">01 / FALL</span></div>
+          <p class="pullquote">“Faith is a beautiful thing.<br>I wish I had it.”</p>
+          <p class="synopsis">When Matt's identity is sold, his life is dismantled piece by piece. Stripped of stability, dignity, and certainty, he must decide what cannot be taken from him.</p>
+          <button class="text-link read-more" data-open="born">READ THE DECONSTRUCTION <span>↗</span></button>
+        </article>
+        <article class="comic-card" data-comic="yellow">
+          <div class="comic-meta"><h3>DAREDEVIL: YELLOW</h3><span>(2001)</span><em>Jeph Loeb &amp; Tim Sale</em></div>
+          <div class="comic-art art-yellow" role="img" aria-label="Original amber and black illustration suggesting memory, a masked hero, and a handwritten letter"><span class="art-profile"></span><span class="art-letter"></span><span class="art-label">02 / MEMORY</span></div>
+          <p class="pullquote">“Dear Karen,”</p>
+          <p class="synopsis">A letter to a lost love becomes a doorway into Matt's earliest days as Daredevil—and the yellow suit, young hope, and grief that shaped him.</p>
+          <button class="text-link read-more" data-open="yellow">READ THE DECONSTRUCTION <span>↗</span></button>
+        </article>
+        <article class="comic-card" data-comic="out">
+          <div class="comic-meta"><h3>OUT</h3><span>(2002)</span><em>Brian Michael Bendis &amp; Alex Maleev</em></div>
+          <div class="comic-art art-out" role="img" aria-label="Original blue-black rain scene with a solitary silhouette"><span class="rain"></span><span class="art-figure"></span><span class="art-label">03 / EXPOSURE</span></div>
+          <p class="pullquote">“You don't get to decide<br>what's wrong with you.”</p>
+          <p class="synopsis">As Matt's secret identity becomes public, the boundary between the man and the mask begins to collapse under scrutiny, danger, and the weight of truth.</p>
+          <button class="text-link read-more" data-open="out">READ THE DECONSTRUCTION <span>↗</span></button>
+        </article>
+        <article class="comic-card" data-comic="heaven">
+          <div class="comic-meta"><h3>TO HEAVEN THROUGH HELL</h3><span>(2019)</span><em>Chip Zdarsky &amp; Marco Checchetto</em></div>
+          <div class="comic-art art-heaven" role="img" aria-label="Original muted amber cityscape with a solitary figure beneath cathedral-like architecture"><span class="art-cross"></span><span class="art-figure"></span><span class="art-label">04 / RECKONING</span></div>
+          <p class="pullquote">“Maybe we don't get to choose<br>what we become.”</p>
+          <p class="synopsis">After a devastating mistake, Matt wrestles with accountability, vocation, and whether a man who saves others can learn to save himself.</p>
+          <button class="text-link read-more" data-open="heaven">READ THE DECONSTRUCTION <span>↗</span></button>
+        </article>
+      </div>
+      <div class="comic-detail" id="comicDetail" hidden aria-live="polite">
+        <button class="close-detail" id="closeDetail" aria-label="Close comic details">×</button>
+        <p class="eyebrow" id="detailKicker">PANEL DECONSTRUCTION</p><h3 id="detailTitle"></h3><p id="detailEssay"></p>
+        <div class="panel-notes" id="panelNotes"></div>
+      </div>
+      <p class="disclaimer">A FAN-MADE TRIBUTE. COMIC ART IS NOT REPRODUCED HERE; PANEL NOTES ARE DESCRIPTIVE INTERPRETATIONS.</p>
+    </section>
+
+    <section class="middle-section" id="letters">
+      <div class="letter-panel">
+        <div class="letter-bg" aria-hidden="true"></div>
+        <div class="letter-content">
+          <p class="eyebrow">AN INTERACTIVE ARCHIVE / DAREDEVIL: YELLOW</p>
+          <h2>Dear Karen.</h2>
+          <p class="letter-intro">Four chapters. One unsent love.<br>A memory that won't stay buried.</p>
+          <div class="chapter-list" role="tablist" aria-label="Letter chapters">
+            <button class="chapter active" role="tab" aria-selected="true" data-chapter="0"><span>CHAPTER 01</span><b>The Yellow Robe</b><i>↗</i></button>
+            <button class="chapter" role="tab" aria-selected="false" data-chapter="1"><span>CHAPTER 02</span><b>The City</b><i>↗</i></button>
+            <button class="chapter" role="tab" aria-selected="false" data-chapter="2"><span>CHAPTER 03</span><b>The Silence</b><i>↗</i></button>
+            <button class="chapter" role="tab" aria-selected="false" data-chapter="3"><span>CHAPTER 04</span><b>St. Patrick's Cathedral</b><i>↗</i></button>
+          </div>
+          <div class="letter-reveal" aria-live="polite">
+            <p class="letter-chapter-title" id="letterChapterTitle">01 — The Yellow Robe</p>
+            <p id="letterText" class="letter-text">I remember the color before I remember the night. Yellow cloth, bright enough to believe the world could still be kind. I wore it like a promise I hadn't yet learned how to keep.</p>
+            <p class="letter-signoff" id="letterSignoff">— M.</p>
+          </div>
+          <div class="letter-actions"><button class="primary-button" id="unfoldBtn">UNFOLD NEXT <span>→</span></button><button class="text-link" id="revealAll">REVEAL FULL LETTER</button></div>
+          <div class="audio-row"><span>◖)) &nbsp; AUDIO (TYPEWRITER + BRAILLE)</span><span id="audioStatus">ON</span><button id="audioInline" class="switch on" aria-label="Toggle letter sounds" aria-pressed="true"><i></i></button><span class="audio-hint">SOME LETTERS ARE NEVER SENT.</span></div>
+          <p class="copyright-note">Original fan-written text inspired by the themes of the comic. Not a reproduction of the published letters.</p>
+        </div>
+        <div class="letter-visual" aria-hidden="true"><div class="paper"><span>Dear Karen,</span><small>there are things I never learned to say.</small><div class="paper-lines"></div></div></div>
+      </div>
+
+      <div class="radar-panel" id="radar">
+        <p class="eyebrow">SENSORY SYSTEM / 05</p><h2>WORLD ON FIRE</h2><p class="radar-subtitle">BIO-ACOUSTIC RADAR TOPOGRAPHY</p>
+        <div class="radar-layout">
+          <div class="radar-screen">
+            <div class="radar-grid"></div><div class="radar-sweep"></div><div class="radar-rings"><i></i><i></i><i></i><i></i></div><div class="radar-person">◉</div><div class="radar-wave"></div><span class="radar-coord">N / 04.12</span>
+          </div>
+          <div class="readouts">
+            <div class="readout"><span class="readout-icon">♡</span><div><small>HEARTBEAT</small><strong id="bpm">72 <small>BPM</small></strong><div class="pulse-line"><i></i></div></div></div>
+            <div class="readout"><span class="readout-icon">)))</span><div><small>ECHolocation</small><strong id="echoValue">ACTIVE</strong><div class="pulse-line pulse-blue"><i></i></div></div></div>
+            <div class="readout"><span class="readout-icon">⌁</span><div><small>BAROMETRIC SHIFTS</small><strong id="pressure">1013 <small>hPa</small></strong><div class="pressure-line"></div></div></div>
+          </div>
+        </div>
+        <div class="radar-footer"><div><small>SENSORY CALIBRATION</small><div class="calibration"><button class="cal active" data-layer="heart">○ HEART</button><button class="cal" data-layer="echo">○ ECHO</button><button class="cal" data-layer="baro">○ BARO</button></div></div><button class="ping-button" id="pingBtn">⌁ &nbsp; PLAY PING</button></div>
+        <p class="sim-note">A fictional sensory visualization. Readings are simulated—not medical or environmental measurements.</p>
+      </div>
+    </section>
+
+    <section class="timeline-section" id="timeline">
+      <div class="timeline-main">
+        <p class="eyebrow">THE CANONICAL TIMELINE</p><h2>THE EVOLUTION OF A LEGEND</h2><p class="timeline-sub">The long road from 1979 — present.</p>
+        <div class="timeline-track">
+          <div class="timeline-line"></div>
+          <button class="time-point active" data-time="0"><i></i><b>1979</b><span>The Miller Era</span><small>Shadows deepen</small></button>
+          <button class="time-point" data-time="1"><i></i><b>1986</b><span>Born Again</span><small>Miller / Mazzucchelli</small></button>
+          <button class="time-point" data-time="2"><i></i><b>2001</b><span>Daredevil: Yellow</span><small>Loeb / Sale</small></button>
+          <button class="time-point" data-time="3"><i></i><b>2002</b><span>Out</span><small>Bendis / Maleev</small></button>
+          <button class="time-point" data-time="4"><i></i><b>2019</b><span>To Heaven Through Hell</span><small>Zdarsky / Checchetto</small></button>
+          <button class="time-point" data-time="5"><i></i><b>2024+</b><span>The Next Chapter</span><small>Legacy continues</small></button>
+        </div>
+        <p class="timeline-detail" id="timelineDetail">Frank Miller's run pushed Daredevil toward street-level noir, moral ambiguity, and the cost of living by a code.</p>
+        <div class="skyline" aria-hidden="true"></div>
+      </div>
+      <aside class="quote-panel"><div class="quote-shadow"></div><p>HE SEES<br>WHAT OTHERS<br>CANNOT.</p><span>— THE DEVIL OF HELL'S KITCHEN</span></aside>
+    </section>
+  </main>
+  <footer><a class="monogram" href="#home">D<span>D</span></a><span>A FAN-MADE WEBSITE &nbsp; • &nbsp; FOR THE MAN WITHOUT FEAR</span><p>“The world is blind.<br>But I see it. And I feel it.” <small>— FAN-MADE HOMAGE</small></p></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
